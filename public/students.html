@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/students.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./javascripts/students.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/student.png" alt="Student logo">
+        <section>
+          <h1>Learning Platform</h1>
+          <h2>This platform will help you manage your classes</h2>
+        </section>
+    </header>
+    <nav id="interno">
+        <p> Name: <input type="text" id="name" size="15"> </p>
+        <p>Course <select id="course" onchange="filter()"></select></p>
+        <p><input type="button" value="Search" onclick="filter()"></p>
+        <p><input type="button" value="All Students" onclick="loadStudents()"></p>
+        
+    </nav>
+    <main id="students">
+
+    </main>
+    
+</body>
+</html>

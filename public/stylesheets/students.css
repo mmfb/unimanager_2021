@@ -1,0 +1,12 @@
+body > main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+body > main > section {
+    padding: 5px;
+    margin: 5px;
+    background-color: lightblue;
+    color: darkmagenta;
+}
