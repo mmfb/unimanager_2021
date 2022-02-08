@@ -9,4 +9,9 @@ router.get('/', async function(req, res, next) {
 
 });
 
+router.get('/database', async function(req, res, next) {
+  res.send({ database: process.env.DATABASE_URL});
+});
+
+
 module.exports = router;
